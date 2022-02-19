@@ -108,7 +108,7 @@ function flipACoin(call) {
   return count
   }
 
-console.log(flipACoin('tails'))
+//console.log(flipACoin('tails'))
 
 /** Export 
  * 
