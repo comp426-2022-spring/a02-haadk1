@@ -41,7 +41,7 @@ return (Math.floor(Math.random() * 2) == 0) ? 'heads' : 'tails';
     ]
  */
 
-function coinFlips(flips) {
+export function coinFlips(flips) {
   const arr = []
   for(let i = 0; i < flips; i++) {
   arr[i] = Math.floor(Math.random() * 2) == 0 ? 'heads' : 'tails'
@@ -64,7 +64,7 @@ function coinFlips(flips) {
  * @returns {{ heads: number, tails: number }}
  */
 
-function countFlips(array) {
+export function countFlips(array) {
   var count = {
     tails : 0,
     heads : 0
@@ -93,7 +93,7 @@ function countFlips(array) {
  * returns: { call: 'tails', flip: 'heads', result: 'lose' }
  */
 
-function flipACoin(call) {
+export function flipACoin(call) {
   var count = {
     call: call,
     flip : coinFlip(call),
