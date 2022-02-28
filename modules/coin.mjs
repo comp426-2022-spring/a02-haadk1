@@ -44,7 +44,7 @@ return (Math.floor(Math.random() * 2) == 0) ? 'heads' : 'tails';
 export function coinFlips(flips) {
   const arr = []
   for(let i = 0; i < flips; i++) {
-  arr[i] = Math.floor(Math.random() * 2) == 0 ? 'heads' : 'tails'
+  arr[i] = coinFlip();
   }
   return arr;
 }
@@ -65,6 +65,8 @@ export function coinFlips(flips) {
  */
 
 export function countFlips(array) {
+
+
   var count = {
     tails : 0,
     heads : 0
@@ -96,8 +98,7 @@ export function countFlips(array) {
 export function flipACoin(call) {
   var count = {
     call: call,
-    flip : coinFlip(call),
-    result: ''
+    flip : coinFlip()
   }
   if(count.call == count.flip) {
     count.result = 'win'
