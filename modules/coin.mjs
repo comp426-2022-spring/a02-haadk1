@@ -66,8 +66,8 @@ export function coinFlips(flips) {
 
 export function countFlips(array) {
   var count = {
-    heads : 0,
-    tails : 0
+    tails : 0,
+    heads : 0
   }
   for(let i = 0; i < array.length; i++) {
     if(array[i] == 'heads') {
